@@ -14,3 +14,7 @@ This is a responsive Stats Preview Card Component built using **HTML** and **CSS
   - `grid` and `flexbox` for layout.
   - `mix-blend-mode` and `filter` for the violet overlay effect.
   - Media queries for responsiveness.
+
+## 🌐 Live Preview
+To view this component in action, visit the live demo:
+[Stats Preview Card Component](https://cardcomponent-three.vercel.app/)
