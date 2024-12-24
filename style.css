@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 900px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.card-content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.accent {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stat-label {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  mix-blend-mode: multiply;
+  opacity: 0.7;
+}
+
+@media (max-width: 670px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    max-width: 400px;
+  }
+
+  .card-image {
+    order: -1;
+    height: auto;
+  }
+
+  .card-image img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+  }
+
+  .card-content {
+    padding: 40px 60px;
+    order: 0;
+    text-align: center;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    display: block;
+  }
+  .card-content {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .stat-value {
+    font-size: 20px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+  }
+}
