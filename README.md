@@ -7,3 +7,10 @@ This is a responsive Stats Preview Card Component built using **HTML** and **CSS
 - Modern and accessible UI adhering to WCAG standards.
 - Includes a violet-tinted overlay effect for the image using CSS properties.
 - Utilizes `grid` and `flexbox` for a clean, maintainable layout.
+
+## 🛠️ Technologies Used
+- **HTML5**: For semantic and structured content.
+- **CSS3**: For styling, including advanced properties such as:
+  - `grid` and `flexbox` for layout.
+  - `mix-blend-mode` and `filter` for the violet overlay effect.
+  - Media queries for responsiveness.
